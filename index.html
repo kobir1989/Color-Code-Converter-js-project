@@ -1,42 +1,29 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+ 
   <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
   <title>SHADE UP</title>
 </head>
-
 <body>
   <main>
     <div id="main">
-
-
       <div class="container">
-
         <a href="index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
-
         <h1 class="text-center main-heading"><span class="a">Shade</span> <span class="b">Up</span> </h1>
-
       </div>
-
       <div class="container features">
-
-
         <div class="feature-heading">
           <h1>Features</h1>
         </div>
-
-
         <div class="row">
           <div class="col-md-4 col-sm-12 col-xs-12">
             <a href="#hexTrgbGO">
@@ -46,7 +33,6 @@
               </div>
             </a>
           </div>
-
           <div class="col-md-4 col-sm-12 col-xs-12">
             <a href="#rgbThexGO">
               <div class="text-center">
@@ -55,8 +41,6 @@
               </div>
             </a>
           </div>
-
-
           <div class="col-md-4 col-sm-12 col-xs-12">
             <a href="#colorByHexGO">
               <div class="text-center">
@@ -65,8 +49,6 @@
               </div>
             </a>
           </div>
-
-
           <div class="col-md-4 col-sm-12 col-xs-12">
             <a href="#colorByRgbGO">
               <div class="text-center">
@@ -75,8 +57,6 @@
               </div>
             </a>
           </div>
-
-
           <div class="col-md-4 col-sm-12 col-xs-12">
             <a href="#selectByRangeGO">
               <div class="text-center">
@@ -84,8 +64,6 @@
                 <p>Choose by changing the Range of RGB</p>
               </div>
           </div>
-
-
           <div class="col-md-4 col-sm-12 col-xs-12">
             <a href="#randomPickerGO">
               <div class="text-center">
@@ -94,16 +72,12 @@
               </div>
             </a>
           </div>
-
-
         </div>
       </div>
-
 
       <section id="hexTrgbGO">
         <div class="container hexTrgbConv-cont">
           <h2>HEX To RGB</h2>
-
           <div class="note">
             <h6 class="text-center"><span>Note:</span> Enter 6 digit Hex code <span>Without # Sign</span></h6>
           </div>
@@ -115,16 +89,15 @@
                   id="HexConvertButton">Convert</a></div>
             </div>
             <div class="col-md-6">
-              <div class="hexConv-out-box">
+              <div class="hexConv-out-box" onclick="copyColorCode(hexCOut)">
                 <h1 id="hexCOut">
-
                 </h1>
               </div>
             </div>
           </div>
         </div>
       </section>
-
+<!-----------Select By range------------------>
       <section id="rgbThexGO">
         <div class="container rgbThexConv-cont">
           <h2>RGB To HEX</h2>
@@ -137,24 +110,18 @@
                   id="rgbConvertButton">Convert</a></div>
             </div>
             <div class="col-md-6">
-              <div class="rgbConv-out-box">
+              <div class="rgbConv-out-box" onclick="copyColorCode(rgbCOut)">
                 <h1 id="rgbCOut">
-
                 </h1>
               </div>
             </div>
           </div>
         </div>
-
       </section>
-
-
-
 
       <section id="selectByRangeGO">
         <div class="container RangeFinder-cont">
           <h2>Select by RGB Range</h2>
-
           <div class="row text-center">
             <div class="col-md-4">
               <label for="RValue">R</label>
@@ -171,13 +138,8 @@
         </div>
       </section>
 
-
-
-
-
       <section id="colorByHexGO">
         <div class="container hexFinder-cont">
-
           <h2>Color by HEX Code</h2>
           <div class="row text-center">
             <div class="col-md-4">
@@ -190,11 +152,6 @@
           </div>
         </div>
       </section>
-
-
-
-
-
 
       <section id="colorByRgbGO">
         <div class="container rgbFinder-cont">
@@ -211,49 +168,25 @@
             </div>
           </div>
         </div>
-
       </section>
-
-
-
 
       <section id="randomPickerGO">
         <div class=" container random-container">
-
           <div class="text text-center">
             <h2 class="random-picker-h2">Random Picker</h2>
             <a class="btn btn-primary btn-light px-5 py-2 random-picker-button" onclick="randompickerbtn()"
               id="randomPickerButton">Hit Me</a>
-            <div class="random-picker" id="randomPicker">
+            <div class="random-picker" id="randomPicker" onclick="copyColorCode(randomValuePara)">
               <p class="random-value-para" id="randomValuePara">#F46075</p>
             </div>
-
           </div>
       </section>
 
-
     </div>
     </div>
-    </div> -->
-
-
-
+    </div> 
     </div>
-
-
-
-
-
-
-
-
-
-
   </main>
-
-
-
-
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -264,8 +197,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
-
+     <script src="js/main.js"></script>
 </body>
-
 </html>
