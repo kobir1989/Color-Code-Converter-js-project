@@ -274,7 +274,7 @@ body {
   margin-bottom: 2vmin;
 }
 
-#color-box {
+#colorBox {
   border: 1px solid darkolivegreen;
   height: 100px;
   border-radius: 10px;
@@ -320,7 +320,7 @@ body {
   margin-bottom: 2vmin;
 }
 
-#rgb-color-box {
+#rgbColorBox {
   border: 1px solid saddlebrown;
   height: 100px;
   border-radius: 10px;
@@ -355,12 +355,12 @@ body {
   text-align: center;
 }
 
-#range-color-box {
+#rangeColorBox {
   border: 1px solid saddlebrown;
   height: 100px;
   border-radius: 10px;
   font-family: var(--font-raleway);
-  color: black;
+  color: rgb(209, 196, 196);
   font-size: 2em;
   font-weight: bold;
 }
@@ -479,25 +479,6 @@ body {
   font-weight: bold;
 }
 
-/* RgbTohexConverter-end */
-
-/* /////////////////////////////// */
-
-/* color-picker-start */
-/* 
-.color-picker-row .col-md-1{
-  width: 80px;
-  height: 100px;
-  margin: .5vmin;
-  background-color: aqua;
-} */
-
-/* color-picker-end */
-
-/* ////////////////////////////////////// */
-
-/* footer */
-
 footer {
   background: rgba(46, 46, 46, 0.8);
   overflow-x: hidden;
@@ -530,9 +511,6 @@ footer .column a:hover {
   color: #1537a7;
 }
 
-/* footer */
-
-/* contact us */
 .contact-us h2 {
   margin-top: 10vmin;
   color: mediumseagreen;
@@ -571,8 +549,6 @@ footer .column a:hover {
   font-size: 2em;
   color: rgb(24, 55, 87);
 }
-
-/* contact us */
 
 @media only screen and (max-width: 768px) {
   .features .text-center p {
